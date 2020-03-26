@@ -1,0 +1,48 @@
+.l-footer {
+  background-color: $mainBlack;
+  color: $mainWhite;
+  &__content {
+    padding: 4vw 0;
+    @include media (sp) {
+      padding: 28px 0;
+    }
+  }
+  &__title {
+    font-size: 2vw;
+    @include media (sp) {
+      font-size: 16px;
+    }
+    &-last {
+      font-size: 2vw;
+      padding-top: 2vw;
+      @include media (sp) {
+        font-size: 16px;
+        padding-top: 20px;
+      }
+    }
+  }
+  &__message {
+    font-size: 1.4vw;
+    line-height: 2.2;
+    @include media (sp) {
+      font-size: 12px;
+    }
+    &:last-of-type {
+      @include media (sp) {
+        padding-top: 4px;
+      }
+    }
+  }
+  &__copyright {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: .8vw 0;
+  }
+  &__small {
+    font-size: 1.1vw;
+    @include media (sp) {
+      font-size: 10px;
+    }
+  }
+}

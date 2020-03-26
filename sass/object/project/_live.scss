@@ -1,0 +1,94 @@
+.p-live {
+  &__content {
+    position: relative;
+    margin-top: 9vw;
+    @include media (sp) {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__title {
+    font-size: 2vw;
+    font-weight: 600;
+    height: 18vw;
+    margin: 5vw 0 0 9.2vw;
+    writing-mode: vertical-lr;
+    padding-right: 2vw;
+    width: 8vw;
+    @include media (sp) {
+      font-size: 18px;
+      font-weight: 500;
+      height: auto;
+      margin: 24px 0 0;
+      padding: 0;
+      writing-mode: initial;
+      width: 100%;
+    }
+    &::before {
+      content: '';
+      background-color: $accentColor;
+      width: 4.1vw;
+      height: 19vw;
+      position: absolute;
+      top: 4vw;
+      left: 8.6vw;
+      z-index:-10;
+      @include media (sp) {
+        left: 0;
+        height: 32px;
+        top: 253px;
+        width: 96%;
+      }
+    }
+  }
+  &__figure {
+    height: 30vw;
+    width: 64vw;
+    @include media (sp) {
+      @include spFigure;
+    }
+    .p-live__info & {
+      width: 34vw;
+      height:58vw;
+      @include media (sp) {
+        @include spFigure;
+        margin-top:24px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &--second {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    margin-top: 8vw;
+    @include media (sp) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 24px;
+    }
+  }
+  &__message {
+      font-size: 1.6vw;
+      line-height: 1.4;
+      margin: 0 auto;
+      width: 60vw;
+    @include media (sp) {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  &-triangle {
+    @include triangle;
+    margin-top: 8vw;
+    border-color: transparent $mainColor transparent transparent;
+  }
+}

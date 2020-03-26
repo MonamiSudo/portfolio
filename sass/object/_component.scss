@@ -1,0 +1,85 @@
+.c-content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  @include media (sp) {
+    width: calc(100% - 32px);
+    margin: auto;
+  }
+}
+
+.c-btn {
+  background-color: $accentColor;
+  border-radius: 28px;
+  display: block;
+  height: 100px;
+  margin: 6vw auto 4vw auto;
+  width: 400px;
+  @include media (sp) {
+    width: 254px;
+    height: 61px;
+    margin: 48px auto;
+  }
+}
+
+.c-btn__message {
+  font-size: 28px;
+  padding: 2vw 2.5vw;
+  @include media (sp) {
+    font-size: 18px;
+    width: 200px;
+  }
+  .p-activity & {
+    padding: 29px 95px;
+    @include media (sp) {
+      padding: 18.5px 0 0 56px;
+    }
+  }
+  .p-introduce & {
+    padding: 29px 79px;
+    @include media (sp) {
+      padding: 18.5px 0 0 49px;
+    }
+  }
+}
+
+.c-sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.c-sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.c-sa--lr {
+  transform: translate(-100px, 0);
+}
+
+.c-sa--rl {
+  transform: translate(100px, 0);
+}
+
+.c-sa--up {
+  transform: translate(0, 100px);
+}
+
+.c-sa--down {
+  transform: translate(0, -100px);
+}
+
+.c-sa--scaleUp {
+  transform: scale(.5);
+}
+
+.c-sa--scaleDown {
+  transform: scale(1.5);
+}
+
+.c-sa--rotateL {
+  transform: rotate(180deg);
+}
+
+.c-sa--rotateR {
+  transform: rotate(-180deg);
+}

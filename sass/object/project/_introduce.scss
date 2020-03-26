@@ -1,0 +1,57 @@
+.p-introduce {
+  background-color: $subColor;
+  padding-bottom: 4vw;
+  &__title {
+    font-size: 2vw;
+    padding: 2vw 0;
+    @include media (sp) {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+  }
+  &__figure {
+    height: 40vw;
+    width: 88vw;
+    & img {
+      object-fit: cover;
+      width: 100%;
+    }
+    @include media (sp) {
+      height: 232px;
+    }
+  }
+  &__affiliation {
+    margin-left: 10vw;
+    padding-top: 4vw;
+    font-size: 2vw;
+    @include media (sp) {
+      font-size: 16px;
+      margin-left: 36px;
+      padding: 16px 0 0;
+    }
+  }
+  &__name {
+    margin-left: 10vw;
+    padding-top: 0.4vw;
+    font-size: 1.8vw;
+    @include media (sp) {
+      font-size: 16px;
+      padding: 0;
+      margin-left: 36px;
+    }
+  }
+  &__message {
+    font-size: 1.5vw;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    margin-left: 10vw;
+    padding-top: 2vw;
+    width: 58vw;
+    @include media (sp) {
+      font-size: 12px;
+      margin-left: 36px;
+      padding-top: 8px;
+      width: 80%;
+    }
+  }
+}

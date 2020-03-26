@@ -1,0 +1,51 @@
+@import "_variable.scss";
+
+/*============
+基本設定
+=============*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $mainBlack;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  font-family: MyYugothic, "游ゴシック Medium", YuGothic, AppleSystem, MySansSerif, MyHiragino, メイリオ, Meiryo, sans-serif;
+  opacity: 1;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+}
+
+figure {
+  margin: 0;
+}

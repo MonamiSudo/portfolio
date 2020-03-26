@@ -1,0 +1,77 @@
+@import "../foundation/variable";
+
+.l-header {
+  background-image: url("../img/siteTop.jpg");
+  background-size: cover;
+  height: 0;
+  padding-top: 66%;
+  position: relative;
+  width: 100%;
+  &__title {
+    color: $mainBlack;
+    font-size: 6vw;
+    font-weight: 500;
+    position: absolute;
+    top: 15vw;
+    left: 5vw;
+    @include media (sp) {
+      font-size: 20px;
+      left: 1vw;
+    }
+    &--sub {
+      color: $mainBlack;
+      font-size: 3vw;
+      font-weight: 500;
+      position: absolute;
+      top: 23vw;
+      left: 10.5vw;
+      @include media (sp) {
+        font-size: 12px;
+        left:1.5vw;
+      }
+    }
+  }
+}
+
+//　ハンバーガーメニュー
+.l-hamburger {
+  float: right;
+  width: 64px;
+  height: 34px;
+  margin: 28px 0;
+  cursor: pointer;
+  position: relative;
+  &__line {
+    background: $mainWhite;
+    width: 64px;
+    height: 6px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    position: absolute;
+    right: 12px;
+    &:first-of-type {
+      top:0px;
+    }
+    &:nth-of-type(2) {
+      top: 10px;
+    }  
+    &:nth-of-type(3) {
+      top: 20px;
+    } 
+  }
+}
+
+//ハンバーガーメニュー アニメーション
+.clicked .l-hamburger__line:first-child {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.clicked .l-hamburger__line:nth-of-type(2) {
+  display: none;
+}
+
+.clicked .l-hamburger__line:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 20px;
+}

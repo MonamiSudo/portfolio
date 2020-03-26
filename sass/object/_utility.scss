@@ -1,0 +1,8 @@
+.u-flex {
+  display: flex;
+  @include media (sp) {
+    display: block;
+  }
+}
+
+.u-jc-sb {justify-content: space-between;}

@@ -1,0 +1,99 @@
+.p-live {
+  background-color: $mainGray;
+  padding-top: 8vw;
+  @include media (sp) {
+    padding-top: 28px;
+  }
+  &__content {
+    position: relative;
+    padding-bottom: 5vw;
+    @include media (sp) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__bg {
+    background-color: #fff;
+    height: 32vw;
+    width: 52vw;
+    position: absolute;
+    right: 0;
+    top: 10vw;
+    @include media (sp) {
+      height: auto;
+      width: 100%;
+      position: static;
+    }
+  }
+  &__title {
+    padding: 10vw 0 0 6vw;
+    @include media (sp) {
+      font-weight: 500;
+      margin: 24px 0 0 20px;
+      padding: 0;
+    }
+    &::before {
+      content: '';
+      background-color: $accentColor;
+      width: 4.1vw;
+      height: 19vw;
+      position: absolute;
+      top: 4vw;
+      left: 8.6vw;
+      z-index:-10;
+      @include media (sp) {
+        left: 0;
+        height: 32px;
+        top: 251px;
+        width: 96%;
+      }
+    }
+  }
+  &__figure {
+    height: 32vw;
+    width: 48vw;
+    @include media (sp) {
+      @include spFigure;
+    }
+    .p-live__info & {
+      width: 34vw;
+      height:58vw;
+      @include media (sp) {
+        @include spFigure;
+        margin-top:24px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &--second {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    margin-top: 8vw;
+    @include media (sp) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 12px;
+    }
+  }
+  &__message {
+    padding: 1.5vw 0 0 6vw;
+    width: 80%;
+    @include media (sp) {
+      padding: 8px 0 20px 20px;
+      width: 88%;
+    }
+  }
+  &-triangle {
+    @include triangle;
+    margin-top: 8vw;
+    border-color: transparent $mainColor transparent transparent;
+  }
+}

@@ -1,0 +1,72 @@
+.p-introduce {
+  background-color: $subColor;
+  padding-bottom: 4vw;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 5.5vw;
+    @include media (sp) {
+      padding: 20px 0;
+      position: static;
+    }
+  }
+  &__figure {
+    height: 36vw;
+    margin-left: auto;
+    padding-top: 1vw;
+    width: 48vw;
+    @include media (sp) {
+      padding-top: 0;
+      width: 100%;
+    }
+    & img {
+      object-fit: cover;
+      object-position: -12% 0%;
+      width: 100%;
+    }
+    @include media (sp) {
+      height: 232px;
+    }
+  }
+  &__bg {
+    background-color: #fff;
+    width: 48vw;
+    height: 30vw;
+    position: absolute;
+    top: 12vw;
+    @include media (sp) {
+      height: auto;
+      padding-bottom: 32px;
+      position: static;
+      width: 100%;
+    }
+  }
+  &__affiliation {
+    padding-top: 8vw;
+    margin-left: 8vw;
+    @include media (sp) {
+      margin-left: 36px;
+      padding: 32px 0 0;
+    }
+  }
+  &__name {
+    margin-left: 8vw;
+    padding-top: 0.4vw;
+    @include media (sp) {
+      padding: 0;
+      margin-left: 36px;
+    }
+  }
+  &__message {
+    letter-spacing: .1em;
+    line-height: 1.5;
+    margin-left: 8vw;
+    padding-top: 3vw;
+    width: 68%;
+    @include media (sp) {
+      margin-left: 36px;
+      padding-top: 8px;
+      width: 80%;
+    }
+  }
+}

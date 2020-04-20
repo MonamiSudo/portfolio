@@ -1,0 +1,100 @@
+.p-contact {
+  background-color: $mainGray;
+  height: 52vw;
+  position: relative;
+  @include media (sp) {
+    position: static;
+    height: auto;
+    padding: 36px 0 30px;
+  }
+  &__figure {
+    height: 32vw;
+    width: 48vw;
+    position: absolute;
+    top: 14vw;
+    right: 8vw;
+    z-index: 1;
+    @include media (sp) {
+      height: 232px;
+      width: 90%;
+      margin: 0 auto;
+      position: static;
+    }
+  }
+  &__link {
+    position: absolute;
+    top: 8vw;
+    right: 28vw;
+    @include media (sp) {
+      position: relative;
+      display: block;
+      height: 20px;
+      margin: 28px 20px 0;
+      padding-left: 28px;
+      width: 82px;
+      top: 0;
+      right: 0;
+      }
+    &::before {
+      @include arrowBefore;
+      top: 4.3vw;
+      width:18.5vw;
+      @include media (sp) {
+        border-bottom: 1px solid #333;
+        left: 22px;
+        top: 13px;
+        width: 88px;
+      }
+    }
+    &::after {
+      @include arrowAfter;
+      height: 1.8vw;
+      right: -4.6vw;
+      top: 3.1vw;
+      @include media (sp) {
+        border-right: 1px solid #333;
+        top: 7px;
+        right: 4px;
+        height: 12px;
+        z-index: 100000;
+      }
+    }
+  }
+  &__title {
+    font-size: 3vw;
+  }
+  &__desc {
+    background-color: #fff;
+    height: 32vw;
+    width: 40vw;
+    position: absolute;
+    top: 8vw;
+    left: 14vw;
+    @include media (sp) {
+      position: static;
+      margin: 0 auto;
+      height: 80px;
+      width: 90%;
+    }
+  }
+  &__text {
+    margin: 10vw 0 0 17vw;
+    writing-mode: vertical-rl;
+    @include media (sp) {
+      writing-mode: initial;
+      padding-left: 32px;
+      padding-top: 16px;
+      margin: 0;
+    }
+    &:nth-of-type(2) {
+      margin: -11vw 0 0 13vw;
+      writing-mode: vertical-rl;
+      @include media (sp) {
+        writing-mode: initial;
+        padding-left: 32px;
+        padding-top:0;
+        margin: 0;
+      }
+    }
+  }
+}

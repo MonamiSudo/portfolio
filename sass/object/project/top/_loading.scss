@@ -1,0 +1,27 @@
+#p-loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  transition-duration: 1.5s;
+  transition-property: all, hidden;
+  transition-timing-function: ease;
+  transition-delay: .5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.p-loading__figure {
+  position: absolute;
+  top: 40vh;
+  left: 45vw;
+  width: 100px;
+  height: 100px;
+}
+
+.p-loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+

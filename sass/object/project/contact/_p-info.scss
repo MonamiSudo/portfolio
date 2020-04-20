@@ -1,0 +1,44 @@
+.p-info {
+  background-image: url("../img/activity2.1.jpg");
+  background-size: cover;
+  height: 44vw;
+  margin-top: 4vw;
+  padding-top: 10vw;
+  @include media (sp) {
+    background-position: 60% 0%;
+    margin-top: 16px;
+    padding-top: 36px;
+    height: 304px;
+  }
+  &__bg {
+    background-color: $mainGray;
+    height: 35vw;
+    margin: 0 auto;
+    opacity: 0.7;
+    width: 80vw;
+    @include media (sp) {
+      height: 276px;
+      width: 90%;
+    }
+  }
+  &__title {
+    padding-top: 8vw;
+    padding-left: 6vw;
+    @include media (sp) {
+      padding: 28px 0 0 24px;
+    }
+    &:nth-of-type(2) {
+      padding-top: 5vw;
+      @include media (sp) {
+        padding-top: 24px;
+      }
+    }
+  }
+  &__text {
+    padding: 1vw 0 0 6vw;
+    width: 68vw;
+    @include media (sp) {
+      padding: 4px 0 0 24px;
+    }
+  }
+}

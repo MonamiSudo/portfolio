@@ -1,0 +1,121 @@
+.p-activity {
+  background-color: $subColor2;
+  &__figure--top {
+    width: 100vw;
+    height: 52.677vw;
+    position: relative;
+  }
+  &__img--top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 600;
+    position: relative;
+    z-index: 100;
+    &--sub {
+      margin: 40px 0 12px;
+      @include media (sp) {
+        margin: 20px 0 0;
+      }
+      &:nth-of-type(2) {
+        @include media (sp) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+  &__figure {
+    height: 40vw;
+    width: 48vw;
+    & img {
+      object-fit: cover;
+    }
+    @include media (sp) {
+      @include spFigure;
+    }
+    &:first-of-type {
+      width: 40vw;
+      height: 28vw;
+      margin-right: 2vw;
+      display: inline-block;
+      @include media (sp) {
+        margin-top: 12px;
+        margin-right: 0;
+        width: 43.5vw;
+      }
+    }
+  }
+  &__figure:nth-of-type(2) {
+    width: 40vw;
+    height: 28vw;
+    display: inline-block;
+  }
+  &__figure--gassyuku {
+    height: 40vw;
+    width: 48vw;
+    @include media (sp) {
+      height: 232px;
+      margin-top: 12px;
+      width: 100%;
+    }
+    & img {
+      object-fit: cover;
+      @include media (sp) {
+        width: 100%;
+      }
+    }
+  }
+  &__message {
+    line-height: 1.5;
+    letter-spacing: .2em;
+    margin: 4vw auto;
+    text-align: center;
+    width: 60vw;
+    @include media (sp) {
+      margin: 8px 0 0;
+      text-align: left;
+      width: 100%;
+    }
+  }
+  &__message--gassyuku {
+    margin: 0;
+    padding: 12vw 0 0 4vw;
+    width: 36vw;
+    @include media (sp) {
+      padding-top: 12px;
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  &__slider {
+    overflow-x: auto;
+  }
+  &__slider--x {
+    display: flex;
+    justify-content: space-around;
+    @include media (sp) {
+      display: inline-flex;
+    }
+    & figure {
+      height: 24vw;
+      margin-top: 3vw;
+      width: 26vw;
+      @include media (sp) {
+        height: 212px;
+        margin: 12px 16px 0 0;
+        width: 70vw;
+      }
+    }
+    & img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  &__triangle {
+    @include activity-triangle;
+    border-bottom: 12vw solid $subColor;
+    border-right: 100vw solid $subColor2;
+  }
+}

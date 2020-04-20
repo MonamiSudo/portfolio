@@ -1,0 +1,45 @@
+.p-faq {
+  background-color: $subColor2;
+  margin-top: 4vw;
+  padding-bottom: 4vw;
+  @include media (sp) {
+    margin-top: 16px;
+    padding-bottom: 28px;
+  }
+  &__title {
+    margin-left: 14.5vw;
+    padding-top: 4vw;
+    @include media (sp) {
+      padding-top: 28px;
+      margin-left: 14px;
+    }
+  }
+  &__ul {
+    max-width: 70vw;
+    @include media (sp) {
+      max-width: 100%;
+    }
+  }
+  &__li {
+    padding-top: 4vw;
+    @include media (sp) {
+      padding-top: 40px;
+    }
+    &:nth-of-type(1) {
+      @include media (sp) {
+        padding-top: 20px;
+      }
+    }
+  }
+  &__span {
+    color: $accentColor2;
+    font-size: 2vw;
+  }
+  &__ans {
+    padding-top: 0.2vw;
+    @include media (sp) {
+      padding-top: 8px;
+    }
+  }
+
+}

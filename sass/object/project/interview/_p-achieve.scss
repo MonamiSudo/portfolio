@@ -1,0 +1,41 @@
+.p-achieve {
+  background-color: $mainGray;
+  margin: 20vw 0 8vw;
+  padding-bottom: 4vw;
+  @include media (sp) {
+    margin-top: 604px;
+    padding-bottom: 28px;
+  }
+  &__title {
+    text-align: center;
+    padding: 4vw 0;
+    @include media (sp) {
+      padding: 16px 0;
+    }
+  }
+  &__figure {
+    height: 24vw;
+    width: 34vw;
+    @include media (sp) {
+      height: 232px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    &:nth-of-type(2) {
+      @include media (sp) {
+        margin-top: 8px;
+      }
+    } 
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__text {
+    margin: 4vw auto 0;
+    width: 56vw;
+    @include media (sp) {
+      margin: 16px auto 0;
+      width: 80%;
+    }
+  }
+}

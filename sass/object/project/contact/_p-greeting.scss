@@ -1,0 +1,25 @@
+.p-greeting {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8vw;
+  @include media (sp) {
+    padding-bottom: 32px;
+  }
+  &__title {
+    margin-left: 14.5vw;
+    padding-top: 8vw;
+    @include media (sp) {
+      margin-left: 14px;
+      padding-top: 32px;
+    }
+  }
+  &__text {
+    margin-left: 14.5vw;
+    padding-top: 2vw;
+    width: 68vw;
+    @include media (sp) {
+      margin-left: 14px;
+      padding-top: 12px;
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.p-introduction {
+  background: linear-gradient(to bottom, $mainWhite 0%, $mainWhite 10%, $mainGray 10%, $mainGray 100%);
+  padding: 36px 0;
+  @include media (sp) {
+    padding: 36px 0 0;
+  }
+  &__wrapper {
+    background-color: $mainColor;
+    height: 200px;
+    margin-left: auto;
+    width: 80vw;
+    @include media (sp) {
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__text {
+    padding: 56px 0 0 140px;
+    width: 80%;
+    @include media (sp) {
+      padding: 40px 36px;
+      width: auto;
+    }
+  }
+  &__relative {
+    position: relative;
+  }
+  &__figure {
+    height: 680px;
+    margin-top: 36px;
+    width: 80vw;
+    @include media (sp) {
+      height: 200px;
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+  }
+  &__index {
+    position: absolute;
+    top: 6vw;
+    right: 0;
+    @include media (sp) {
+      position: static;
+      background-color: $mainWhite;
+    }
+  }
+  &__nav {
+    width: 48vw;
+    @include media (sp) {
+      width: 100%;
+    }
+  }
+  &__title {
+    padding: 0 0 2vw 31.5vw;
+    @include media (sp) {
+      text-align: center;
+      padding: 8px 0;
+    }
+  }
+  &__li {
+    &:nth-last-of-type(even) {
+      background-color: $mainWhite;
+    }
+    &:nth-last-of-type(odd) {
+      background-color: $mainGray;
+    }
+  }
+  &__span {
+    font-size: 2.4vw;
+    margin-right: 2vw;
+  }
+  &__link {
+    display: block;
+    font-size: 1.4vw;
+    padding: 1.5vw 8vw;
+    position: relative;
+    @include media (sp) {
+      padding: 16px 32px;
+    }
+  }
+  &__box {
+    display: inline-block;
+    height: 40px;
+    width: 6.5vw;
+    padding-top: 0.6vw;
+    position: absolute;
+    top: 2vw;
+    right: 8vw;
+    @include media (sp) {
+      height: 10px;
+      top: 15px;
+      right: 60px;
+    }
+    &::before {
+      @include arrowBefore;
+      @include media (sp) {
+        width: 12.4vw;
+        border-bottom: 1px solid #333;
+        top: 12px;
+        left: -4px;
+      }
+    }
+    &::after {
+      @include arrowAfter;
+      @include media (sp) {
+        height: 6px;
+        top: 11px;
+        right: -4vw;
+        border-right: 1px solid #333;
+      }
+    }
+  }
+}

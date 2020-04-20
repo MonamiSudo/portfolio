@@ -1,0 +1,40 @@
+.contact-page {
+  .p-fv {
+    background-image: url("../img/effector.JPG");
+    background-size: cover;
+    height: 0;
+    padding-top: 66%;
+    position: relative;
+    width: 100%;
+    @include media (sp) {
+      background-position: 56% 0%;
+      padding-top: 100%;
+    }
+    &__title {
+      color: $mainWhite;
+      font-size: 6vw;
+      font-weight: 500;
+      position: absolute;
+      top: 15vw;
+      left: 5vw;
+      @include media (sp) {
+        font-size: 20px;
+        top: 112px;
+        left: 12px;
+      }
+      &--sub {
+        color: $mainWhite;
+        font-size: 3vw;
+        font-weight: 500;
+        position: absolute;
+        top: 23vw;
+        left: 17vw;
+        @include media (sp) {
+          font-size: 12px;
+          top: 136px;
+          left: 46px;
+        }
+      }
+    }
+  }
+}

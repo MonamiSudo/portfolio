@@ -1,0 +1,11 @@
+.p-keidou-img {
+  background-image: url("../img/keidou-img.JPG");
+  background-size: cover;
+  background-position: 0% 80%;
+  background-attachment: fixed;
+  height: 620px;
+  @include media (sp) {
+      background-attachment: initial;
+      height: 220px;
+    }
+}

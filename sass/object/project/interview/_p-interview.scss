@@ -1,0 +1,136 @@
+.p-interview {
+  background-color: $mainGray;
+  height: 180vw;
+  padding-top: 8vw;
+  position: relative;
+  z-index: -10;
+  @include media (sp) {
+    height: 1120px;
+    padding-top: 24px;
+  }
+  &__section {
+    position: relative;
+    &:nth-of-type(2) {
+      margin-top: 66vw;
+      @include media (sp) {
+        margin-top: 560px;
+      }
+    }
+    &:nth-of-type(3) {
+      margin-top: 20vw;
+      @include media (sp) {
+        margin-top: 280px;
+      }
+    }
+  }
+  &__wrapper {
+    background-color: $mainWhite;
+    position: absolute;
+    height: 76vw;
+    width: 88vw;
+    z-index: -5;
+    @include media (sp) {
+      height: 390px;
+      width: 96%;
+    }
+  }
+  &__figure {
+    height: 36vw;
+    margin-left: 48vw;
+    padding-top: 4vw;
+    width: 52vw;
+    @include media (sp) {
+      height: 232px;
+      margin-left: auto;
+      padding-top: 24px;
+      width: 90%;
+    }
+    .section2 & {
+      margin-left: 0;
+    }
+  }
+  &__img {
+    @include media (sp) {
+      object-fit: cover;
+    }
+  }
+  &__desc {
+    background-color: $mainColor;
+    height: 48vw;
+    width: 64vw;
+    position: absolute;
+    left: 8vw;
+    top: 16vw;
+    z-index: -1;
+    @include media (sp) {
+      height: 306px;
+      left:36px;
+      top: 256px;
+      width: 88%;
+    }
+    .section2 & {
+      background-color: $subColor2;
+      left: 17vw;
+      width: 83vw;
+      @include media (sp) {
+        height: 392px;
+        left: 27px;
+        top: 168px;
+        width: 92%;
+      }
+    }
+    .section3 & {
+      background-color: $subColor;
+      @include media (sp) {
+        height: 456px;
+        left: 0;
+        top: 172px;
+        width: 100%;
+      }
+    }
+  }
+  &__name {
+    padding: 11vw 14vw 0;
+    @include media (sp) {
+      padding: 12px 20px;
+    }
+    .section2 & {
+      padding: 10vw 0 0 52vw;
+      @include media (sp) {
+        padding: 112px 0 0 40px;
+      }
+    }
+    .section3 & {
+      @include media (sp) {
+        padding: 108px 0 0 72px;
+      }
+    }
+  }
+  &__text {
+    margin: 0 auto;
+    padding-top: 11vw;
+    width: 44vw;
+    @include media (sp) {
+      margin: 0;
+      padding-top: 0;
+      padding-left: 20px;
+      width: 86%;
+    }
+    .section2 & {
+      margin-left: 23vw;
+      padding-top: 13vw;
+      @include media (sp) {
+        margin: 0;
+        padding: 16px 0 0 40px;
+        width: 84%;
+      }
+    }
+    .section3 & {
+      @include media (sp) {
+        padding-left: 72px;
+        padding-top: 12px;
+        width: 74%;
+      }
+    }
+  }
+}

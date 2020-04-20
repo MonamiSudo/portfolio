@@ -7,26 +7,14 @@
       padding: 28px 0;
     }
   }
-  &__title {
-    font-size: 2vw;
+  &__title-last {
+    padding-top: 2vw;
     @include media (sp) {
-      font-size: 16px;
+      padding-top: 20px;
     }
-    &-last {
-      font-size: 2vw;
-      padding-top: 2vw;
-      @include media (sp) {
-        font-size: 16px;
-        padding-top: 20px;
-      }
-    }
-  }
+  }  
   &__message {
-    font-size: 1.4vw;
     line-height: 2.2;
-    @include media (sp) {
-      font-size: 12px;
-    }
     &:last-of-type {
       @include media (sp) {
         padding-top: 4px;

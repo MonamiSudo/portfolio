@@ -1,12 +1,14 @@
 /*==========
 色
 ===========*/
+$mainColor: #eaf7f8;
+$subColor: #C8E0DB;
+$subColor2: #C8D8E0;
 $mainBlack: #333;
 $mainWhite: #fff;
-$mainGray: #C8D8E0;
-$mainColor: #eaf7f8;
+$mainGray: #ccc;
 $accentColor: #E8C251;
-$subColor: #C8E0DB;
+$accentColor2: #FF3399;
 
 $breakpoints: (
   sp: "only screen and (max-width: 559px)",

@@ -11,9 +11,27 @@
 @import "object/component";
 @import "object/utility";
 // project
-@import "object/project/loading";
-@import "object/project/rookie";
-@import "object/project/live";
-@import "object/project/activity";
-@import "object/project/introduce";
-@import "object/project/keidou-img";
+
+// project トップページ 
+@import "object/project/top/loading";
+@import "object/project/top/fv";
+@import "object/project/top/rookie";
+@import "object/project/top/live";
+@import "object/project/top/activity";
+@import "object/project/top/introduce";
+@import "object/project/top/keidou-img";
+
+// project 活動内容
+@import "object/project/activity/p-fv";
+@import "object/project/activity/p-introduction";
+@import "object/project/activity/p-content";
+@import "object/project/activity/p-contact";
+
+@import "object/project/interview/p-fv";
+@import "object/project/interview/p-interview";
+@import "object/project/interview/p-achieve";
+
+@import "object/project/contact/p-fv";
+@import "object/project/contact/p-info";
+@import "object/project/contact/p-faq";
+@import "object/project/contact/p-greeting";

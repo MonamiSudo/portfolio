@@ -1,19 +1,23 @@
 $(function () {
-  // ハンバーガーメニューボタン　アニメーション
-  //$(document)
-    //.on('click', '#hamburger', hamburger)
 
-    $(window)
-      .on('load', load);
+    //$(window)
+      //.on("load", load);
 
+  if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+    $(document) //スマホ無効
+      .on("scroll", scrollAnimation)
+      .on("scroll", headerScrollBar);
+  } else {
     $(document)
-      .on("scroll", scrollAnimation);  
+      .on("click", ".l-ham", hamburgerMenu);
+  }    
 
-  function hamburger() {
-    const ham_line = document.getElementById("hamburger");
-    ham_line.classList.toggle("clicked");
+  // ハンバーガーメニュー
+  function hamburgerMenu() {
+    $('.l-ham').toggleClass("clicked");
   }
 
+  // スクロールアニメーション
   function scrollAnimation() {
     var scrollAnimationElm = document.querySelectorAll('.c-sa');
     for (var i = 0; i < scrollAnimationElm.length; i++) {
@@ -24,10 +28,19 @@ $(function () {
     }
   }
 
-  function load() {
+  /*function load() {
     const spinner = document.getElementById('p-loading');
     spinner.classList.add('p-loaded');
-  }
+  }*/
 
+  // スクロール時ヘッダーに下線
+  function headerScrollBar () {
+    var scroll = $(window).scrollTop();
+    if ( scroll > 70 ) {
+      $('.l-header').addClass("l-header__scrollBottom");
+    } else {
+      $(".l-header").removeClass("l-header__scrollBottom");
+    }
+  }
 
 });

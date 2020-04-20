@@ -1,4 +1,5 @@
 @import "_variable.scss";
+@import "_mixin.scss";
 
 /*============
 基本設定
@@ -13,11 +14,35 @@ body {
   letter-spacing: .1em;
   font-family: MyYugothic, "游ゴシック Medium", YuGothic, AppleSystem, MySansSerif, MyHiragino, メイリオ, Meiryo, sans-serif;
   opacity: 1;
+  overflow-x: auto;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 1.8vw;
+  @include media (sp) {
+    font-size: 16px;
+  }
+}
+
+h3 {
+  font-size: 1.5vw;
+  @include media (sp) {
+    font-size: 14px;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3vw;
+  @include media (sp) {
+    font-size: 12px;
+  }
 }
 
 ul {

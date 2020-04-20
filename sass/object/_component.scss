@@ -1,5 +1,5 @@
 .c-content-wrapper {
-  width: 90%;
+  width: 84%;
   margin: 0 auto;
   @include media (sp) {
     width: calc(100% - 32px);
@@ -42,9 +42,66 @@
   }
 }
 
+.c-link-btn {
+  display: block;
+  font-size: 3vw;
+  margin: 4vw auto 2vw;
+  text-align: center;
+  width: 15vw;
+  position: relative;
+  .p-introduce & {
+    margin: 8vw auto 2vw;
+    @include media (sp) {
+      margin-bottom: 6vw;
+    }
+  }
+  @include media (sp) {
+    font-size: 20px;
+    margin: 32px auto;
+    width: 68px;
+  }
+  &::before {
+    border-bottom: 2px solid $mainBlack;
+    content: '';
+    display: block;
+    width: 12vw;
+    position: absolute;
+    top: 4vw;
+    left: 3vw;
+    @include media (sp) {
+      border-bottom: 1px solid #333;
+      left: 1px;
+      top: 28px;
+      width: 71px;
+    }
+  }
+  &::after {
+    border-right: 2px solid #333;
+    content: '';
+    display: block;
+    width: 13vw;
+    height: 2vw;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 7vw;
+    left: 3.1vw;
+    @include media (sp) {
+      border-right: 1px solid #333;
+      height: 8px;
+      left: 32px;
+      top: 36px;
+      width: 42px;
+    }
+  }
+}
+
 .c-sa {
   opacity: 0;
   transition: all .5s ease;
+  @include media (sp) {
+    opacity: 1;
+    transition: none;
+  }
 }
 
 .c-sa.show {
@@ -54,32 +111,28 @@
 
 .c-sa--lr {
   transform: translate(-100px, 0);
+  @include media (sp) {
+    transform: none;
+  }
 }
 
 .c-sa--rl {
   transform: translate(100px, 0);
+  @include media (sp) {
+    transform: none;
+  }
 }
 
 .c-sa--up {
   transform: translate(0, 100px);
+  @include media (sp) {
+    transform: none;
+  }
 }
 
 .c-sa--down {
   transform: translate(0, -100px);
-}
-
-.c-sa--scaleUp {
-  transform: scale(.5);
-}
-
-.c-sa--scaleDown {
-  transform: scale(1.5);
-}
-
-.c-sa--rotateL {
-  transform: rotate(180deg);
-}
-
-.c-sa--rotateR {
-  transform: rotate(-180deg);
+  @include media (sp) {
+    transform: none;
+  }
 }

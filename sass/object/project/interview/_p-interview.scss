@@ -97,12 +97,12 @@
     .section2 & {
       padding: 10vw 0 0 52vw;
       @include media (sp) {
-        padding: 112px 0 0 40px;
+        padding: 112px 0 0 16px;
       }
     }
     .section3 & {
       @include media (sp) {
-        padding: 108px 0 0 72px;
+        padding: 108px 0 0 48px;
       }
     }
   }
@@ -121,13 +121,13 @@
       padding-top: 13vw;
       @include media (sp) {
         margin: 0;
-        padding: 16px 0 0 40px;
+        padding: 16px 0 0 16px;
         width: 84%;
       }
     }
     .section3 & {
       @include media (sp) {
-        padding-left: 72px;
+        padding-left: 48px;
         padding-top: 12px;
         width: 74%;
       }

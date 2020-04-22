@@ -24,6 +24,9 @@
     height: 100%;
     object-fit: cover;
     object-position: 0% 0%;
+    @include media (sp) {
+      object-position: 64% 0%;
+    }
   }
   &__title {
     font-weight: 600;
@@ -56,5 +59,27 @@
   }
   &-triangle {
     @include triangle;
+  }
+}
+
+// コロナに関するお知らせ
+.p-message-e {
+  padding-top: 8vw;
+  &__wrapper {
+    border: 3px solid red;
+  }
+  &__title {
+    padding: 2vw 0 0 4vw;
+    @include media (sp) {
+      padding: 16px 0 0 12px;
+    }
+  }
+  &__text {
+    padding: 1vw 0 2vw 4vw;
+    width: 88%;
+    @include media (sp) {
+      padding: 12px 0 16px 14px;
+      width: 92%;
+    }
   }
 }

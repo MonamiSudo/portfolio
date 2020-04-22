@@ -12,7 +12,10 @@ body {
   color: $mainBlack;
   line-height: 1.5;
   letter-spacing: .1em;
-  font-family: MyYugothic, "游ゴシック Medium", YuGothic, AppleSystem, MySansSerif, MyHiragino, メイリオ, Meiryo, sans-serif;
+  /*font-family: MyYugothic, "游ゴシック Medium", YuGothic, AppleSystem, MySansSerif, MyHiragino, メイリオ, Meiryo, sans-serif;*/
+  font-family: kozuka-gothic-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   opacity: 1;
   overflow-x: auto;
 }

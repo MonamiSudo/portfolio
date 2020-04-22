@@ -21,6 +21,9 @@
       position: static;
     }
   }
+  &__img {
+    object-fit: cover;
+  }
   &__link {
     position: absolute;
     top: 8vw;

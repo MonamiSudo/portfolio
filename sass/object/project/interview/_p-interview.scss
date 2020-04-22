@@ -5,21 +5,24 @@
   position: relative;
   z-index: -10;
   @include media (sp) {
-    height: 1120px;
+    height: auto;
     padding-top: 24px;
   }
   &__section {
     position: relative;
+    @include media(sp) {
+      position: static;
+    }
     &:nth-of-type(2) {
       margin-top: 66vw;
       @include media (sp) {
-        margin-top: 560px;
+        margin-top: 0;
       }
     }
     &:nth-of-type(3) {
       margin-top: 20vw;
       @include media (sp) {
-        margin-top: 280px;
+        margin-top: 0;
       }
     }
   }
@@ -30,8 +33,9 @@
     width: 88vw;
     z-index: -5;
     @include media (sp) {
-      height: 390px;
-      width: 96%;
+      height: auto;
+      position: static;
+      width: 100%;
     }
   }
   &__figure {
@@ -43,7 +47,7 @@
       height: 232px;
       margin-left: auto;
       padding-top: 24px;
-      width: 90%;
+      width: 100%;
     }
     .section2 & {
       margin-left: 0;
@@ -63,26 +67,24 @@
     top: 16vw;
     z-index: -1;
     @include media (sp) {
-      height: 306px;
-      left:36px;
-      top: 256px;
-      width: 88%;
+      height: auto;
+      padding: 20px 0;
+      position: static;
+      width: 100%;
     }
     .section2 & {
       background-color: $subColor2;
       left: 17vw;
       width: 83vw;
       @include media (sp) {
-        height: 392px;
         left: 27px;
         top: 168px;
-        width: 92%;
+        width: 100%;
       }
     }
     .section3 & {
       background-color: $subColor;
       @include media (sp) {
-        height: 456px;
         left: 0;
         top: 172px;
         width: 100%;
@@ -92,17 +94,17 @@
   &__name {
     padding: 11vw 14vw 0;
     @include media (sp) {
-      padding: 12px 20px;
+      padding: 12px 16px;
     }
     .section2 & {
       padding: 10vw 0 0 52vw;
       @include media (sp) {
-        padding: 112px 0 0 16px;
+        padding: 0 0 0 16px;
       }
     }
     .section3 & {
       @include media (sp) {
-        padding: 108px 0 0 48px;
+        padding: 0 0 0 16px;
       }
     }
   }
@@ -113,8 +115,8 @@
     @include media (sp) {
       margin: 0;
       padding-top: 0;
-      padding-left: 20px;
-      width: 86%;
+      padding-left: 16px;
+      width: 90%;
     }
     .section2 & {
       margin-left: 23vw;
@@ -122,14 +124,14 @@
       @include media (sp) {
         margin: 0;
         padding: 16px 0 0 16px;
-        width: 84%;
+        width: 90%;
       }
     }
     .section3 & {
       @include media (sp) {
-        padding-left: 48px;
+        padding-left: 16px;
         padding-top: 12px;
-        width: 74%;
+        width: 90%;
       }
     }
   }

@@ -16,6 +16,7 @@
     padding-top: 1vw;
     width: 48vw;
     @include media (sp) {
+      height: 232px;
       padding-top: 0;
       width: 100%;
     }
@@ -23,9 +24,9 @@
       object-fit: cover;
       object-position: -12% 0%;
       width: 100%;
-    }
-    @include media (sp) {
-      height: 232px;
+      @include media (sp) {
+        object-position: 0% 0%;
+      }
     }
   }
   &__bg {
@@ -45,7 +46,7 @@
     padding-top: 5vw;
     margin-left: 8vw;
     @include media (sp) {
-      margin-left: 36px;
+      margin-left: 16px;
       padding: 32px 0 0;
     }
   }
@@ -54,7 +55,7 @@
     padding-top: 0.4vw;
     @include media (sp) {
       padding: 0;
-      margin-left: 36px;
+      margin-left: 16px;
     }
   }
   &__message {
@@ -64,9 +65,9 @@
     padding-top: 3vw;
     width: 68%;
     @include media (sp) {
-      margin-left: 36px;
+      margin-left: 16px;
       padding-top: 8px;
-      width: 80%;
+      width: 90%;
     }
   }
 }
